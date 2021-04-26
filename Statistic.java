@@ -110,4 +110,20 @@ public class Statistic {
 	public static float MeanDifferent(int []x1, int []x2) {
 		return Mean(x1) - Mean(x2);
 	}
+	
+	public static float BestPointEstimation(float S, float T) {
+		return S/T;
+	}
+	
+	public static float WordPermutation(String s) {
+		int count = 1;
+		for(int i =  0 ; i < s.length() ; i++) {
+			for(int j = i + 1 ; j < s.length() ; j++) {
+				if(s.charAt(i) == s.charAt(j)) {
+					count++;
+				}
+			}
+		}
+		return factorial(s.length()) / factorial(count);
+	}
 }

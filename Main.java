@@ -36,6 +36,7 @@ public class Main {
 //		System.out.println(Statistic.GeometricMean(x));
 		
 		System.out.println(Statistic.CircularPermutation(true, 4));
+		System.out.println(Statistic.WordPermutation("Senin"));
 	}
 
 	public static void main(String[] args) {
